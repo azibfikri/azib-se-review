@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HQ guide — Base Only</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="hq">
+  <div class="wrap">
+    <nav class="nav" aria-label="Guide pages">
+      <a href="./index.html">Overview</a>
+      <a href="./products.html">Products</a>
+      <a class="active-hq" href="./hq.html">HQ</a>
+      <a href="./warehouse.html">Warehouse</a>
+    </nav>
+
+    <header class="theme-hq">
+      <div class="eyebrow">HQ tab</div>
+      <h1>Approval list · Approve / Reject · Warehouse handoff</h1>
+      <p class="lede">
+        For HQ / approvers. Review pending submissions, Approve or Reject, then fill
+        details so Warehouse PIC can ship.
+      </p>
+    </header>
+
+    <section>
+      <h2>Who uses this tab?</h2>
+      <p class="who">Approvers who own the go / no-go decision and prepare Part 1 details for Warehouse.</p>
+      <div class="grid-2">
+        <div class="box">
+          <h3>You do here</h3>
+          <ul>
+            <li>Review the approval list</li>
+            <li>Check products + creator</li>
+            <li>Approve or Reject</li>
+            <li>Fill qty / variation / shipping for Warehouse PIC</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>What Approve triggers</h3>
+          <ul>
+            <li>Flow Status → <strong>Approved</strong></li>
+            <li>Warehouse Processing rows created (one per product)</li>
+            <li>Team notified in chat</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How to review &amp; decide</h2>
+      <ol class="steps">
+        <li>Open the <strong>HQ</strong> tab.</li>
+        <li>Filter by approval stage: <strong>Pending Approval</strong>, Approved, or Rejected.</li>
+        <li>Open a submission from the list. Check Selected Products, creator info, and notes.</li>
+        <li>
+          Decide:
+          <ul>
+            <li><strong>Approve</strong> — only when products are linked and details look correct.</li>
+            <li><strong>Reject</strong> — add a reject reason when needed; team gets notified.</li>
+          </ul>
+        </li>
+        <li>After Approve, fill HQ Part 1 fields for Warehouse PIC (qty, size/colour/variation, shipping address, phone, notes).</li>
+        <li>Track handoff with warehouse filters: Pending HQ Fill → Pending Warehouse → Shipped → Done.</li>
+      </ol>
+      <div class="tip"><strong>Remember:</strong> Approve is what creates Warehouse rows. If Selected Products is empty, fix the links first — don’t approve yet.</div>
+    </section>
+
+    <section>
+      <h2>Before you Approve checklist</h2>
+      <div class="grid-2">
+        <div class="box">
+          <h3>Must check</h3>
+          <ul>
+            <li>Selected Products linked</li>
+            <li>Creator(s) look correct</li>
+            <li>Promo / commission / notes reviewed</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>After Approve</h3>
+          <ul>
+            <li>Confirm Warehouse Records appeared</li>
+            <li>Fill shipping + contact for PIC</li>
+            <li>Move status when ready for Warehouse</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ok"><strong>Done when:</strong> submission is Approved, Warehouse rows exist, and Part 1 details are filled for the PIC.</div>
+    </section>
+
+    <footer>Base Only · HQ guide</footer>
+  </div>
+</body>
+</html>

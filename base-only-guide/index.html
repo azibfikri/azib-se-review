@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Base Only — How to use</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #14201c;
+      --muted: #4d5c56;
+      --line: #d7e0db;
+      --bg: #f3f7f4;
+      --card: #ffffff;
+      --accent: #0f7a5f;
+      --accent-soft: #d9f0e7;
+      --warn: #9a5b12;
+      --warn-soft: #f7ebd7;
+      --products: #1d5c8f;
+      --hq: #0f7a5f;
+      --wh: #7a4a16;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Manrope", system-ui, sans-serif;
+      line-height: 1.5;
+    }
+
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+    }
+
+    header {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 28px;
+      padding: 22px 22px 20px;
+      border-radius: 18px;
+      background:
+        radial-gradient(1200px 240px at 10% -20%, #c8ebe0 0%, transparent 55%),
+        linear-gradient(160deg, #ffffff 0%, #eef6f2 100%);
+      border: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.12;
+      font-weight: 700;
+    }
+
+    .lede {
+      margin: 0;
+      max-width: 58ch;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .flow-step {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #fff;
+      border: 1px solid var(--line);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .flow-step span {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      opacity: 0.7;
+    }
+
+    .flow-step.products { border-top: 3px solid var(--products); }
+    .flow-step.hq { border-top: 3px solid var(--hq); }
+    .flow-step.wh { border-top: 3px solid var(--wh); }
+
+    section {
+      margin-bottom: 16px;
+      padding: 18px 18px 16px;
+      border-radius: 16px;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+
+    section h2 {
+      margin: 0 0 6px;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      height: 24px;
+      padding: 0 10px;
+      border-radius: 999px;
+      font-family: "Manrope", sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .badge.products { background: #e4f0f9; color: var(--products); }
+    .badge.hq { background: var(--accent-soft); color: var(--hq); }
+    .badge.wh { background: var(--warn-soft); color: var(--wh); }
+
+    .who {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    ol, ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li { margin: 6px 0; font-size: 14px; }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .box {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: var(--bg);
+      border: 1px solid var(--line);
+    }
+
+    .box h3 {
+      margin: 0 0 6px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .box p, .box li {
+      margin: 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .tip {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: var(--warn-soft);
+      border: 1px solid #ecd7b3;
+      color: #5c3a12;
+      font-size: 13px;
+    }
+
+    .tip strong { color: var(--warn); }
+
+    footer {
+      margin-top: 8px;
+      padding: 14px 4px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .flow, .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Base Only · App guide</div>
+      <h1>How to use this Lark Base App</h1>
+      <p class="lede">
+        One Base, three workspaces. Submit products and request approval on
+        <strong>Products</strong>, decide on <strong>HQ</strong>, then fulfill on
+        <strong>Warehouse</strong>. Status lives in Flow — Approve / Reject drives the rest.
+      </p>
+      <div class="flow" aria-label="Process flow">
+        <div class="flow-step products"><span>1 · Products</span>Submit products &amp; request approval</div>
+        <div class="flow-step hq"><span>2 · HQ</span>Review list · Approve or Reject · fill warehouse details</div>
+        <div class="flow-step wh"><span>3 · Warehouse</span>Update affiliate, shipping &amp; Lalamove tracking</div>
+      </div>
+    </header>
+
+    <section id="products">
+      <h2><span class="badge products">Products</span> Product Submission &amp; Approval Request</h2>
+      <p class="who">For affiliate / e-com teammates who submit products and ask HQ to approve.</p>
+      <div class="grid-2">
+        <div class="box">
+          <h3>Product Submit</h3>
+          <ol>
+            <li>Open <strong>Products</strong>.</li>
+            <li>Use <strong>Product Submit</strong> to add a product.</li>
+            <li>Fill product details (name, URL, price, image, etc.).</li>
+            <li>Link the correct <strong>Creator</strong> (affiliate) — pick once; HQ &amp; Warehouse will see it automatically.</li>
+          </ol>
+        </div>
+        <div class="box">
+          <h3>Sent Approval / Approval Request</h3>
+          <ol>
+            <li>After products are ready, create an <strong>Approval Request</strong>.</li>
+            <li>Give a clear <strong>Submission Title</strong> (campaign / requester name).</li>
+            <li>Link the products under <strong>Selected Products</strong>.</li>
+            <li>Submit — HQ gets notified; status starts as <strong>Pending Approval</strong>.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="tip"><strong>Tip:</strong> One submission should map to one creator’s products when possible. Mixed creators show up as a multi-creator list for HQ.</div>
+    </section>
+
+    <section id="hq">
+      <h2><span class="badge hq">HQ</span> Approval list · Approve / Reject · Warehouse handoff</h2>
+      <p class="who">For HQ / approvers who decide yes or no, then prepare details for Warehouse PIC.</p>
+      <ol>
+        <li>Open <strong>HQ</strong> and use filters: <em>Pending Approval</em>, <em>Approved</em>, <em>Rejected</em>.</li>
+        <li>Open a submission — check linked products, creator info, and notes.</li>
+        <li>
+          Decide:
+          <ul>
+            <li><strong>Approve</strong> — Flow Status becomes Approved → Warehouse rows are created automatically.</li>
+            <li><strong>Reject</strong> — Flow Status becomes Rejected → team is notified (add a reject reason when needed).</li>
+          </ul>
+        </li>
+        <li>After approve, fill HQ Part 1 details for Warehouse PIC (qty, variation, size/colour, shipping address, phone, etc.).</li>
+        <li>Use warehouse status filters (Pending HQ Fill → Ready / Pending Warehouse → Done) to track handoff.</li>
+      </ol>
+      <div class="tip"><strong>Remember:</strong> Approve is what creates Warehouse Processing rows. Do not skip linking products before approving.</div>
+    </section>
+
+    <section id="warehouse">
+      <h2><span class="badge wh">Warehouse</span> Affiliate details · Lalamove · Shipping</h2>
+      <p class="who">For Warehouse PIC who packs, ships, and updates tracking for affiliates.</p>
+      <ol>
+        <li>Open <strong>Warehouse</strong> — rows are grouped by creator / shipment work.</li>
+        <li>Confirm product + creator on each line (already pulled from the approved submission).</li>
+        <li>Update affiliate / fulfilment details as needed.</li>
+        <li>Add <strong>Lalamove tracking link</strong> and shipping progress.</li>
+        <li>Upload packaging photo if required, then move status forward (e.g. Shipped → Pending HQ Review → Done).</li>
+      </ol>
+      <div class="tip"><strong>Tip:</strong> If creator looks wrong, fix it on the <em>product</em> (Creator link) — Warehouse creator fields follow from there.</div>
+    </section>
+
+    <section>
+      <h2>Quick checklist</h2>
+      <div class="grid-2">
+        <div class="box">
+          <h3>Before you Approve</h3>
+          <ul>
+            <li>Products linked on the submission</li>
+            <li>Creator looks correct</li>
+            <li>Notes / discount / promo reviewed</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Before you mark Done</h3>
+          <ul>
+            <li>Address &amp; phone filled</li>
+            <li>Lalamove link added</li>
+            <li>Packaging proof uploaded (if needed)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Base Only · Products → HQ → Warehouse · Powered by Lark Base
+    </footer>
+  </div>
+</body>
+</html>

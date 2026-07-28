@@ -220,6 +220,51 @@ footer {
   text-align: center;
 }
 
+.access-table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+.access-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  background: #fff;
+}
+.access-table th,
+.access-table td {
+  padding: 11px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+.access-table th {
+  background: var(--bg);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.access-table tr:last-child td { border-bottom: 0; }
+.pill {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.pill.yes {
+  background: var(--accent-soft);
+  color: #0d4f3e;
+}
+.pill.no {
+  background: #f1e7e7;
+  color: #7a2e2e;
+}
+
 @media (max-width: 720px) {
   .flow, .grid-2 { grid-template-columns: 1fr; }
 }

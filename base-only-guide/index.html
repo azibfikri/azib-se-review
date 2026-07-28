@@ -16,8 +16,8 @@
       <h1>How to use this Lark Base App</h1>
       <p class="lede">
         One Base, three workspaces. Submit on <strong>Products</strong>, decide on
-        <strong>HQ</strong>, fulfill on <strong>Warehouse</strong>. Use the App tabs
-        above to open each workspace — each tab has its own guide.
+        <strong>HQ</strong>, fulfill on <strong>Warehouse</strong>. Not every role sees
+        every tab — check your access below. <strong>Homepage is visible to all roles.</strong>
       </p>
       <div class="flow" aria-label="Process flow">
         <div class="flow-step products"><span>1 · Products</span>Submit products &amp; request approval</div>
@@ -25,6 +25,72 @@
         <div class="flow-step wh"><span>3 · Warehouse</span>Affiliate, shipping &amp; Lalamove tracking</div>
       </div>
     </header>
+
+    <section>
+      <h2>Who can see which tabs?</h2>
+      <p class="who">
+        App Advanced Permissions control your tabs. If a tab is missing for you, that is expected for your role — you are not blocked by a bug.
+      </p>
+      <div class="access-table-wrap">
+        <table class="access-table" aria-label="Role page access">
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Homepage</th>
+              <th>Products</th>
+              <th>HQ</th>
+              <th>Warehouse</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Approver</strong></td>
+              <td><span class="pill yes">Can view</span></td>
+              <td><span class="pill yes">Can view</span></td>
+              <td><span class="pill yes">Can view</span></td>
+              <td><span class="pill yes">Can view</span></td>
+            </tr>
+            <tr>
+              <td><strong>HQ</strong></td>
+              <td><span class="pill yes">Can view</span></td>
+              <td><span class="pill yes">Can view</span></td>
+              <td><span class="pill yes">Can view</span></td>
+              <td><span class="pill no">No access</span></td>
+            </tr>
+            <tr>
+              <td><strong>Warehouse</strong></td>
+              <td><span class="pill yes">Can view</span></td>
+              <td><span class="pill no">No access</span></td>
+              <td><span class="pill no">No access</span></td>
+              <td><span class="pill yes">Can view</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>What each role does</h2>
+      <div class="grid-2">
+        <div class="box">
+          <h3>Approver</h3>
+          <p>Sees <strong>all tabs</strong>. Can work across Products, HQ, and Warehouse. Edits Product Selection, Product Approval, Warehouse Processing, and Creators.</p>
+        </div>
+        <div class="box">
+          <h3>HQ</h3>
+          <p>Sees Homepage, Products, and HQ — <strong>not Warehouse</strong>. Focus on product + approval work. Can edit Product Selection, Product Approval, and Creators (not Warehouse Processing).</p>
+        </div>
+        <div class="box">
+          <h3>Warehouse</h3>
+          <p>Sees Homepage and Warehouse only. Edits Warehouse Processing; Product Selection / Product Approval are view-only; Creators has no access.</p>
+        </div>
+        <div class="box">
+          <h3>Homepage (everyone)</h3>
+          <p>Shared start page for every role. Use it to understand the flow and which tabs you should open next.</p>
+        </div>
+      </div>
+      <div class="tip"><strong>Tip:</strong> Open only the tabs your role shows. Approver can see everything; HQ stops before Warehouse; Warehouse starts at Homepage then goes straight to Warehouse.</div>
+    </section>
 
     <footer>Base Only · Products → HQ → Warehouse · Powered by Lark Base</footer>
   </div>

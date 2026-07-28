@@ -13,77 +13,101 @@
   <div class="wrap">
     <header class="theme-hq">
       <div class="eyebrow">HQ tab</div>
-      <h1>Approval list · Approve / Reject · Warehouse handoff</h1>
+      <h1>Approve pending requests · hand off to Warehouse</h1>
       <p class="lede">
-        For HQ / approvers. Review pending submissions, Approve or Reject, then fill
-        details so Warehouse PIC can ship.
+        For HQ / Approvers. Open a <strong>Pending Approval</strong> request, fill the form,
+        then click <strong>Complete Step</strong> to approve — that sends the work to Warehouse.
+        Only the Approver can complete the step.
       </p>
     </header>
 
     <section>
-      <h2>Who uses this tab?</h2>
-      <p class="who">Approvers who own the go / no-go decision and prepare Part 1 details for Warehouse.</p>
+      <h2>Page layout</h2>
       <div class="grid-2">
         <div class="box">
-          <h3>You do here</h3>
+          <h3>Approve</h3>
           <ul>
-            <li>Review the approval list</li>
-            <li>Check products + creator</li>
-            <li>Approve or Reject</li>
-            <li>Fill qty / variation / shipping for Warehouse PIC</li>
+            <li><strong>List of Approvals</strong> — pending and past requests</li>
+            <li>Click a <strong>Pending Approval</strong> item to open its form</li>
           </ul>
         </div>
         <div class="box">
-          <h3>What Approve triggers</h3>
+          <h3>Warehouse Submit</h3>
           <ul>
-            <li>Flow Status → <strong>Approved</strong></li>
-            <li>Warehouse Processing rows created (one per product)</li>
-            <li>Team notified in chat</li>
+            <li>After approve, fill warehouse handoff details here</li>
+            <li>Qty / variation / shipping for Warehouse PIC</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>How to review &amp; decide</h2>
+      <h2>1 · Open a Pending Approval</h2>
       <ol class="steps">
-        <li>Open the <strong>HQ</strong> tab.</li>
-        <li>Filter by approval stage: <strong>Pending Approval</strong>, Approved, or Rejected.</li>
-        <li>Open a submission from the list. Check Selected Products, creator info, and notes.</li>
-        <li>
-          Decide:
+        <li>Open the <strong>HQ</strong> tab → <strong>Approve</strong>.</li>
+        <li>In <strong>List of Approvals</strong>, find a request with status <strong>Pending Approval</strong> (orange).</li>
+        <li>Click that request (e.g. Lee-Tiktok-28July). The detail form opens on the right.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>2 · Fill the approval form</h2>
+      <p class="who">Complete the fields inside the open Pending Approval record before you finish the step.</p>
+      <ol class="steps">
+        <li>Review <strong>Selected Products (Link)</strong> — confirm the right products are linked.</li>
+        <li>Add <strong>Approval Notes</strong> if useful (e.g. “Can proceed”).</li>
+        <li>Set <strong>Approver</strong> — select yourself / the approving member (required).</li>
+        <li>If rejecting: fill <strong>Reject Reason</strong>, then click <strong>Reject</strong>.</li>
+      </ol>
+      <div class="tip"><strong>Tip:</strong> Don’t leave Selected Products or Approver empty. Fix links first if products are missing.</div>
+    </section>
+
+    <section>
+      <h2>3 · Complete Step = Approve</h2>
+      <ol class="steps">
+        <li>Only the <strong>Approver</strong> can click <strong>Complete Step</strong>.</li>
+        <li>Click <strong>Complete Step</strong> when the form is ready.</li>
+        <li>That means <strong>Approve</strong>:
           <ul>
-            <li><strong>Approve</strong> — only when products are linked and details look correct.</li>
-            <li><strong>Reject</strong> — add a reject reason when needed; team gets notified.</li>
+            <li>Status moves from Pending Approval → Approved</li>
+            <li>Warehouse Processing rows are created (one per selected product)</li>
+            <li>The request is ready for Warehouse handoff</li>
           </ul>
         </li>
-        <li>After Approve, fill HQ Part 1 fields for Warehouse PIC (qty, size/colour/variation, shipping address, phone, notes).</li>
-        <li>Track handoff with warehouse filters: Pending HQ Fill → Pending Warehouse → Shipped → Done.</li>
       </ol>
-      <div class="tip"><strong>Remember:</strong> Approve is what creates Warehouse rows. If Selected Products is empty, fix the links first — don’t approve yet.</div>
+      <div class="ok"><strong>Done when:</strong> the list shows <strong>Approved</strong> (green), and the request can move to <strong>Warehouse Submit</strong> for PIC details.</div>
     </section>
 
     <section>
-      <h2>Before you Approve checklist</h2>
+      <h2>Reject (if not approving)</h2>
+      <ol class="steps">
+        <li>Open the Pending Approval request.</li>
+        <li>Fill <strong>Reject Reason</strong>.</li>
+        <li>Click <strong>Reject</strong> — do not use Complete Step.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Quick checklist</h2>
       <div class="grid-2">
         <div class="box">
-          <h3>Must check</h3>
+          <h3>Before Complete Step</h3>
           <ul>
-            <li>Selected Products linked</li>
-            <li>Creator(s) look correct</li>
-            <li>Promo / commission / notes reviewed</li>
+            <li>Pending Approval item opened</li>
+            <li>Selected Products checked</li>
+            <li>Approver selected</li>
+            <li>Notes filled if needed</li>
           </ul>
         </div>
         <div class="box">
-          <h3>After Approve</h3>
+          <h3>After Complete Step</h3>
           <ul>
-            <li>Confirm Warehouse Records appeared</li>
-            <li>Fill shipping + contact for PIC</li>
-            <li>Move status when ready for Warehouse</li>
+            <li>Status = Approved</li>
+            <li>Warehouse rows created</li>
+            <li>Use Warehouse Submit for shipping details</li>
           </ul>
         </div>
       </div>
-      <div class="ok"><strong>Done when:</strong> submission is Approved, Warehouse rows exist, and Part 1 details are filled for the PIC.</div>
     </section>
 
     <footer>Base Only · HQ guide</footer>

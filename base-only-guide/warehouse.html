@@ -13,24 +13,25 @@
   <div class="wrap">
     <header class="theme-wh">
       <div class="eyebrow">Warehouse tab</div>
-      <h1>Affiliate details · Lalamove · Shipping</h1>
+      <h1>Pack · ship · confirm delivery</h1>
       <p class="lede">
-        For Warehouse PIC. After HQ Approves, update fulfilment details, tracking,
-        and shipping progress for each affiliate line.
+        For <strong>Warehouse PIC</strong>. Open <strong>Pending Warehouse</strong> rows in
+        side peek, add packaging photo and Lalamove tracking, then use
+        <strong>Complete Step</strong> to move forward. Only Warehouse PIC can click Complete Step.
       </p>
     </header>
 
     <section>
       <h2>Who uses this tab?</h2>
-      <p class="who">Warehouse teammates who pack, ship, and update tracking for approved submissions.</p>
+      <p class="who">Warehouse teammates who pack, ship, and confirm when the parcel reaches the owner.</p>
       <div class="grid-2">
         <div class="box">
           <h3>You do here</h3>
           <ul>
-            <li>Open rows created after Approve</li>
-            <li>Confirm product + creator</li>
-            <li>Update affiliate / shipping details</li>
-            <li>Add Lalamove tracking + packaging proof</li>
+            <li>Open rows at <strong>Pending Warehouse</strong></li>
+            <li>Upload packaging photo + Lalamove link</li>
+            <li>Complete Step → Shipped</li>
+            <li>Complete Step again when delivered → Done</li>
           </ul>
         </div>
         <div class="box">
@@ -39,46 +40,81 @@
             <li>Submission link</li>
             <li>Product link</li>
             <li>Creator (from product)</li>
-            <li>PID / listing link (when fanned out)</li>
+            <li>Shipping address, phone, qty, variation (from HQ)</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>How to process a shipment line</h2>
-      <ol class="steps">
-        <li>Open the <strong>Warehouse</strong> tab. Rows are often grouped by creator.</li>
-        <li>Confirm <strong>Record Title</strong>, product, and creator match what HQ approved.</li>
-        <li>Complete / correct affiliate and fulfilment details from HQ Part 1 (address, phone, qty, variation).</li>
-        <li>Add the <strong>Lalamove tracking link</strong> when the job is booked.</li>
-        <li>Upload <strong>packaging photo</strong> if required.</li>
-        <li>Move status forward (e.g. Pending Warehouse → Shipped — Pending HQ Review → Done).</li>
-      </ol>
-      <div class="tip"><strong>Tip:</strong> If the creator is wrong, don’t just edit Warehouse text forever — fix the Creator on the <em>product</em> record so formulas stay correct.</div>
+      <h2>Status flow</h2>
+      <div class="flow" aria-label="Warehouse status flow">
+        <div class="flow-step hq"><span>1</span>Pending Warehouse — pack &amp; ship</div>
+        <div class="flow-step wh"><span>2</span>Shipped — Pending HQ Review</div>
+        <div class="flow-step products"><span>3</span>Done — parcel arrived</div>
+      </div>
+      <div class="tip"><strong>Remember:</strong> Only <strong>Warehouse PIC</strong> can click <strong>Complete Step</strong> at each stage.</div>
     </section>
 
     <section>
-      <h2>Before you mark Done</h2>
+      <h2>1 · Open Pending Warehouse in side peek</h2>
+      <ol class="steps">
+        <li>Open the <strong>Warehouse</strong> tab. Records are grouped by creator (e.g. Aina Beauty, Rina Hairlab).</li>
+        <li>Find a row with status <strong>Pending Warehouse</strong> (blue/orange).</li>
+        <li>Hover the record and click <strong>Open in side peek</strong>.</li>
+        <li>Confirm product + creator match what HQ approved.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>2 · Pending Warehouse — pack &amp; ship</h2>
+      <p class="who">Fill the required fields in the side peek, then complete the step.</p>
+      <ol class="steps">
+        <li>In the <strong>Pending Warehouse</strong> stage, fill:
+          <ul>
+            <li><strong>Packaging Photo</strong> — upload proof of packed parcel</li>
+            <li><strong>Lalamove Tracking Link</strong> — paste the booking / tracking URL</li>
+          </ul>
+        </li>
+        <li>Only <strong>Warehouse PIC</strong> clicks <strong>Complete Step</strong>.</li>
+        <li>Status moves to <strong>Shipped — Pending HQ Review</strong>.</li>
+      </ol>
+      <div class="ok"><strong>Done when:</strong> packaging photo and Lalamove link are saved, and status shows Shipped.</div>
+    </section>
+
+    <section>
+      <h2>3 · Shipped — confirm delivery</h2>
+      <p class="who">When the parcel has arrived at the owner, close out the line.</p>
+      <ol class="steps">
+        <li>Open the same record in side peek (now at <strong>Shipped — Pending HQ Review</strong>).</li>
+        <li>Confirm delivery with the owner / tracking.</li>
+        <li>Only <strong>Warehouse PIC</strong> clicks <strong>Complete Step</strong> again.</li>
+        <li>Status moves to <strong>Done</strong> — shipment successful.</li>
+      </ol>
+      <div class="ok"><strong>Done when:</strong> status shows <strong>Done</strong> (green) and HQ can see the line is complete.</div>
+    </section>
+
+    <section>
+      <h2>Quick checklist</h2>
       <div class="grid-2">
         <div class="box">
-          <h3>Must have</h3>
+          <h3>Pending Warehouse</h3>
           <ul>
-            <li>Shipping address + phone</li>
-            <li>Lalamove tracking link</li>
-            <li>Correct creator / product</li>
+            <li>Side peek opened</li>
+            <li>Packaging photo uploaded</li>
+            <li>Lalamove link pasted</li>
+            <li>Warehouse PIC → Complete Step</li>
           </ul>
         </div>
         <div class="box">
-          <h3>Nice to have</h3>
+          <h3>After Shipped</h3>
           <ul>
-            <li>Packaging photo</li>
-            <li>Clear notes for HQ</li>
-            <li>Status updated so HQ can filter</li>
+            <li>Parcel confirmed arrived</li>
+            <li>Warehouse PIC → Complete Step again</li>
+            <li>Status = Done</li>
           </ul>
         </div>
       </div>
-      <div class="ok"><strong>Done when:</strong> tracking is live, packaging proof is attached if needed, and status shows the shipment is complete.</div>
     </section>
 
     <footer>Base Only · Warehouse guide</footer>

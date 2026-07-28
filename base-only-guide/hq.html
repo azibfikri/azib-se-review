@@ -15,9 +15,8 @@
       <div class="eyebrow">HQ tab</div>
       <h1>Approve pending requests · hand off to Warehouse</h1>
       <p class="lede">
-        For HQ / Approvers. Open a <strong>Pending Approval</strong> request, fill the form,
-        then click <strong>Complete Step</strong> to approve — that sends the work to Warehouse.
-        Only the Approver can complete the step.
+        For HQ / Approvers. Approve on the <strong>Approve</strong> tab, then fill product details on
+        <strong>Warehouse Submit</strong> before the record goes to the Warehouse PIC.
       </p>
     </header>
 
@@ -34,8 +33,8 @@
         <div class="box">
           <h3>Warehouse Submit</h3>
           <ul>
-            <li>After approve, fill warehouse handoff details here</li>
-            <li>Qty / variation / shipping for Warehouse PIC</li>
+            <li>After approve — fill remaining details per product</li>
+            <li>Use <strong>Open in side peek</strong> to enter shipping / qty / PIC</li>
           </ul>
         </div>
       </div>
@@ -71,11 +70,36 @@
           <ul>
             <li>Status moves from Pending Approval → Approved</li>
             <li>Warehouse Processing rows are created (one per selected product)</li>
-            <li>The request is ready for Warehouse handoff</li>
+            <li>Each product starts at <strong>Pending HQ Fill</strong></li>
           </ul>
         </li>
       </ol>
-      <div class="ok"><strong>Done when:</strong> the list shows <strong>Approved</strong> (green), and the request can move to <strong>Warehouse Submit</strong> for PIC details.</div>
+      <div class="ok"><strong>Next:</strong> go to <strong>Warehouse Submit</strong> and fill the remaining details before Warehouse PIC can take over.</div>
+    </section>
+
+    <section>
+      <h2>4 · Warehouse Submit — fill product details</h2>
+      <p class="who">After approve, HQ must complete the handoff fields for each product before it goes to Warehouse PIC.</p>
+      <ol class="steps">
+        <li>Switch to the <strong>Warehouse Submit</strong> tab (same HQ page).</li>
+        <li>Find rows with status <strong>Pending HQ Fill</strong> (orange). Use the status chips or filter if needed.</li>
+        <li>Hover the record title and click <strong>Open in side peek</strong> (side panel icon).</li>
+        <li>In the side peek, fill all required fields:
+          <ul>
+            <li><strong>Phone Number</strong></li>
+            <li><strong>Shipping Address</strong></li>
+            <li><strong>Variation</strong></li>
+            <li><strong>Colour</strong></li>
+            <li><strong>Size</strong></li>
+            <li><strong>Qty</strong></li>
+            <li><strong>Warehouse PIC</strong> — select the warehouse member</li>
+          </ul>
+        </li>
+        <li>Click <strong>Complete Step</strong> when the form is ready.</li>
+        <li>Repeat for each product row still at Pending HQ Fill.</li>
+      </ol>
+      <div class="tip"><strong>Tip:</strong> Side peek keeps the list visible while you edit one product at a time. Don’t skip Warehouse PIC — that’s who picks up the job on the Warehouse tab.</div>
+      <div class="ok"><strong>Done when:</strong> status moves to <strong>Pending Warehouse</strong> and Warehouse PIC can see the record on the Warehouse tab.</div>
     </section>
 
     <section>
@@ -91,20 +115,21 @@
       <h2>Quick checklist</h2>
       <div class="grid-2">
         <div class="box">
-          <h3>Before Complete Step</h3>
+          <h3>Approve tab</h3>
           <ul>
             <li>Pending Approval item opened</li>
             <li>Selected Products checked</li>
             <li>Approver selected</li>
-            <li>Notes filled if needed</li>
+            <li>Complete Step clicked</li>
           </ul>
         </div>
         <div class="box">
-          <h3>After Complete Step</h3>
+          <h3>Warehouse Submit tab</h3>
           <ul>
-            <li>Status = Approved</li>
-            <li>Warehouse rows created</li>
-            <li>Use Warehouse Submit for shipping details</li>
+            <li>Pending HQ Fill rows found</li>
+            <li>Open in side peek → fill all fields</li>
+            <li>Warehouse PIC selected</li>
+            <li>Complete Step → Pending Warehouse</li>
           </ul>
         </div>
       </div>
